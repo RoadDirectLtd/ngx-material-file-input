@@ -1,3 +1,9 @@
 {
-  "recommendations": ["nrwl.angular-console", "esbenp.prettier-vscode", "angular.ng-template", "redhat.vscode-yaml"]
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "angular.ng-template",
+    "redhat.vscode-yaml",
+    "dbaeumer.vscode-eslint"
+  ]
 }
