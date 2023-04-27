@@ -1,12 +1,10 @@
 {
-  "name": "ngx-material-file-input",
-  "version": "4.0.1",
+  "name": "@roaddirect/ngx-material-file-input",
+  "version": "4.0.2",
   "license": "MIT",
-  "author": {
-    "name": "Jeremy Legros"
-  },
+  "author": "Daniel Stocker (from Jeremy Legros)",
   "description": "File input management for Angular Material",
-  "homepage": "https://merlosy.github.io/ngx-material-file-input/",
+  "homepage": "https://github.com/RoadDirectLtd/ngx-material-file-input",
   "keywords": [
     "angular",
     "material",
@@ -15,13 +13,12 @@
     "mat-form-field"
   ],
   "bugs": {
-    "url": "https://github.com/merlosy/ngx-material-file-input/issues"
+    "url": "https://github.com/RoadDirectLtd/ngx-material-file-input/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/merlosy/ngx-material-file-input"
+    "url": "git+https://github.com/RoadDirectLtd/ngx-material-file-input.git"
   },
-  "dependencies": {},
   "peerDependencies": {
     "@angular/cdk": "^15.0.0",
     "@angular/common": "^15.0.0",
@@ -33,5 +30,9 @@
       "entryFile": "src/index.ts"
     },
     "dest": "../../dist/material-file-input"
+  },
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
