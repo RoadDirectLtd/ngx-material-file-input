@@ -1,8 +1,0 @@
-{
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "paths": {
-      "ngx-material-file-input": ["dist/material-file-input"]
-    }
-  }
-}

@@ -1,100 +1,27 @@
-[![npm version](https://badge.fury.io/js/ngx-material-file-input.svg)](https://badge.fury.io/js/ngx-material-file-input)
-[![Build Status](https://app.travis-ci.com/merlosy/ngx-material-file-input.svg?branch=master)](https://app.travis-ci.com/merlosy/ngx-material-file-input)
-[![npm](https://img.shields.io/npm/dt/ngx-material-file-input.svg)](https://www.npmjs.com/package/ngx-material-file-input)
-[![](http://img.badgesize.io/https://unpkg.com/ngx-material-file-input@latest/bundles/ngx-material-file-input.umd.min.js?label=full%20size%20as%20min.js&compression=gzip&style=square&color=02adff)](https://www.npmjs.com/package/ngx-material-file-input)
-[![Coverage Status](https://coveralls.io/repos/github/merlosy/ngx-material-file-input/badge.svg)](https://coveralls.io/github/merlosy/ngx-material-file-input)
-[![Known Vulnerabilities](https://snyk.io/test/github/merlosy/ngx-material-file-input/badge.svg)](https://snyk.io/test/github/merlosy/ngx-material-file-input)
+# NgxMaterialFileInput
 
-# material-file-input
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
 
-This project provides :
+## Development server
 
-* `ngx-mat-file-input` component, to use inside Angular Material `mat-form-field`
-* a `FileValidator` with `maxContentSize`, to limit the file size
-* a `ByteFormatPipe` to format the file size in a human-readable format
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-For more code samples, have a look at the [DEMO SITE](https://merlosy.github.io/ngx-material-file-input)
+## Code scaffolding
 
-## Install
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```
-npm i ngx-material-file-input
-```
+## Build
 
-## API reference
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### MaterialFileInputModule
+## Running unit tests
 
-```ts
-import { MaterialFileInputModule } from 'ngx-material-file-input';
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-@NgModule({
-  imports: [
-    // the module for this lib
-    MaterialFileInputModule
-  ]
-})
-```
+## Running end-to-end tests
 
-#### NGX_MAT_FILE_INPUT_CONFIG token (optional):
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Change the unit of the ByteFormat pipe
+## Further help
 
-```ts
-export const config: FileInputConfig = {
-  sizeUnit: 'Octet'
-};
-
-// add with module injection
-providers: [{ provide: NGX_MAT_FILE_INPUT_CONFIG, useValue: config }];
-```
-
-### FileInputComponent
-
-selector: `<ngx-mat-file-input>`
-
-implements: [MatFormFieldControl](https://material.angular.io/components/form-field/api#MatFormFieldControl)<FileInput> from Angular Material
-
-**Additionnal properties**
-
-| Name                                  | Description                                                                                                                 |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| _@Input()_ valuePlaceholder: `string` | Placeholder for file names, empty by default                                                                                |
-| _@Input()_ multiple: `boolean`        | Allows multiple file inputs, `false` by default                                                                             |
-| _@Input()_ autofilled: `boolean`      | Whether the input is currently in an autofilled state. If property is not present on the control it is assumed to be false. |
-| _@Input()_ accept: `string`           | Any value that `accept` attribute can get. [more about "accept"](https://www.w3schools.com/tags/att_input_accept.asp)       |
-| value: `FileInput`                    | Form control value                                                                                                          |
-| empty: `boolean`                    | Whether the input is empty (no files) or not                                                                                                          |
-| clear(): `(event?) => void`                    | Removes all files from the input                                                                                                          |
-
-### ByteFormatPipe
-
-**Example**
-
-```html
-<span>{{ 104857600 | byteFormat }}</span>
-```
-
-_Output:_ 100 MB
-
-### FileValidator
-
-| Name                                           | Description                                     | Error structure                           |
-| ---------------------------------------------- | ----------------------------------------------- | ----------------------------------------- |
-| maxContentSize(value: `number`): `ValidatorFn` | Limit the total file(s) size to the given value | `{ actualSize: number, maxSize: number }` |
-
-# About me
-
-[@jereyleg](https://twitter.com/jereyleg)
-
-&star; to show support :)
-
-# Roadmap
-
-* drop event to add files
-* _ideas?_
-
-# Kudos to
-
-* https://github.com/dherges/ng-packagr
-* Jason Aden - Packaging Angular Libraries https://www.youtube.com/watch?v=QfvwQEJVOig
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
