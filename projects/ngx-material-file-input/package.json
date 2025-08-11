@@ -1,9 +1,9 @@
 {
   "name": "@roaddirect/ngx-material-file-input",
-  "version": "4.0.3",
+  "version": "5.0.0",
   "license": "MIT",
   "author": "Daniel Stocker (from Jeremy Legros)",
-  "description": "File input management for Angular Material",
+  "description": "File input management for Angular Material 16",
   "homepage": "https://github.com/RoadDirectLtd/ngx-material-file-input",
   "keywords": [
     "angular",
@@ -17,10 +17,10 @@
     "url": "git+https://github.com/RoadDirectLtd/ngx-material-file-input.git"
   },
   "peerDependencies": {
-    "@angular/cdk": "^15.2.0",
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0",
-    "@angular/material": "^15.2.0"
+    "@angular/cdk": "^16.2.14",
+    "@angular/common": "^16.2.12",
+    "@angular/core": "^16.2.12",
+    "@angular/material": "^16.2.14"
   },
   "dependencies": {
     "tslib": "^2.3.0"
