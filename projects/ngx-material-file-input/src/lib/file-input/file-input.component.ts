@@ -5,7 +5,7 @@ import { ControlValueAccessor, FormGroupDirective, NgControl, NgForm } from '@an
 import { FocusMonitor } from "@angular/cdk/a11y";
 import { coerceBooleanProperty } from "@angular/cdk/coercion";
 import { ErrorStateMatcher } from "@angular/material/core";
-import { MatLegacyFormFieldControl as MatFormFieldControl } from "@angular/material/legacy-form-field";
+import { MatFormFieldControl } from "@angular/material/form-field";
 import { Subject } from "rxjs";
 import { FileInput } from '../model/file-input.model';
 import { FileInputMixinBase } from './file-input-mixin';

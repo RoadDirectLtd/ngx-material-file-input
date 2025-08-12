@@ -1,6 +1,6 @@
 # NgxMaterialFileInput
 
-File input management for Angular Material 16
+File input management for Angular Material 17
 
 Forked from [benceHornyak/ngx-material-file-input](https://github.com/benceHornyak/ngx-material-file-input)
 
